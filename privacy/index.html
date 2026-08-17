@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · RAWD</title>
+<meta name="description" content="Privacy Policy for RAWD, an Islamic companion app for Quran, prayer times, Qibla and Athkar.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../favicon.png">
+<style>:root {
+  --bg: #F6F2E9;
+  --surface: #FFFFFF;
+  --text: #171C19;
+  --muted: #5B6862;
+  --primary: #0C6B51;
+  --accent: #B08A3E;
+  --border: #E4DDCD;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #080C0A;
+    --surface: #121915;
+    --text: #F1EEE4;
+    --muted: #9DA8A1;
+    --primary: #35B189;
+    --accent: #D4B26B;
+    --border: #232E28;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+body[dir="rtl"] {
+  font-family: "SF Arabic", "Segoe UI", "Noto Naskh Arabic", "Geeza Pro", Tahoma, sans-serif;
+  line-height: 1.9;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem; }
+header.top {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1rem; flex-wrap: wrap; margin-bottom: 2.5rem;
+}
+.brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; color: inherit; }
+.mark {
+  width: 34px; height: 34px; border-radius: 9px; flex: none;
+  background: var(--primary); color: #fff;
+  display: grid; place-items: center; font-weight: 700; font-size: 15px;
+}
+.brand b { font-size: 1.05rem; letter-spacing: -.01em; }
+.langs { display: flex; gap: .25rem; padding: .25rem; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
+.langs button {
+  font: inherit; font-size: .85rem; padding: .4rem .85rem; border: 0; border-radius: 7px;
+  background: transparent; color: var(--muted); cursor: pointer;
+}
+.langs button[aria-pressed="true"] { background: var(--primary); color: #fff; }
+.langs button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+h1 { font-size: 1.9rem; line-height: 1.25; letter-spacing: -.02em; margin: 0 0 .4rem; }
+h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; letter-spacing: -.01em; }
+h3 { font-size: 1rem; margin: 1.6rem 0 .4rem; }
+.updated { color: var(--muted); font-size: .9rem; margin: 0 0 2rem; }
+p, li { color: var(--text); }
+ul { padding-inline-start: 1.25rem; }
+li { margin: .4rem 0; }
+a { color: var(--primary); text-underline-offset: 3px; }
+strong { font-weight: 600; }
+.note {
+  background: var(--surface); border: 1px solid var(--border);
+  border-inline-start: 3px solid var(--accent);
+  border-radius: 10px; padding: 1rem 1.15rem; margin: 1.5rem 0;
+}
+.note p:first-child { margin-top: 0; }
+.note p:last-child { margin-bottom: 0; }
+.card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 14px; padding: 1.25rem; margin: 1rem 0;
+}
+.cards { display: grid; gap: .85rem; margin-top: 2rem; }
+a.card { display: block; text-decoration: none; color: inherit; }
+a.card:hover { border-color: var(--primary); }
+a.card b { display: block; color: var(--primary); margin-bottom: .2rem; }
+a.card span { color: var(--muted); font-size: .92rem; }
+.mail { font-size: 1.05rem; font-weight: 600; word-break: break-all; }
+footer {
+  margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+  color: var(--muted); font-size: .88rem;
+  display: flex; gap: 1.25rem; flex-wrap: wrap;
+}
+footer a { color: var(--muted); }
+[data-lang] { display: none; }
+[data-lang].on { display: block; }</style>
+</head>
+<body>
+<!-- Read by the language toggle to retitle the document. Lives in <body>
+     because <span> is not valid inside <head>. -->
+<span hidden data-title-en="Privacy Policy · RAWD" data-title-ar="سياسة الخصوصية · رَوْض"></span>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="../"><span class="mark">R</span><b>RAWD · رَوْض</b></a>
+    <div class="langs" role="group" aria-label="Language / اللغة">
+      <button type="button" data-set="en" aria-pressed="true">English</button>
+      <button type="button" data-set="ar" aria-pressed="false">العربية</button>
+    </div>
+  </header>
+
+  <main>
+    <div data-lang="en" class="on">
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: 17 August 2026</p>
+
+<p>RAWD is an Islamic companion app providing prayer times, the Qibla direction, the Quran, Athkar and supplications. This policy explains exactly what the app does with your information.</p>
+
+<div class="note"><p>The short version: <strong>RAWD is built to work without knowing who you are.</strong> No account is required, and the app is fully functional offline.</p></div>
+
+<h2>1. Information stored on your device</h2>
+<p>All of the following stays on your phone. It is not transmitted anywhere unless you choose to create an account (see section 3).</p>
+<ul>
+  <li>Your location coordinates, or the city you selected manually</li>
+  <li>Your prayer calculation settings and time adjustments</li>
+  <li>Reading position, bookmarks and notes in the Quran</li>
+  <li>Athkar counters and daily progress</li>
+  <li>Tasbih counts and history</li>
+  <li>Favourites and collections</li>
+  <li>Custom wird routines</li>
+  <li>Consistency streaks and daily activity</li>
+  <li>App preferences such as language, theme, text size and notification settings</li>
+</ul>
+<p>You can erase all of it at any time: <strong>Settings → Privacy → Clear data on this device.</strong></p>
+
+<h2>2. Location</h2>
+<p>RAWD asks for location permission only after explaining why, and uses it only to calculate prayer times for where you are, and to calculate the direction of the Qibla.</p>
+<ul>
+  <li>Location is requested <strong>only while you are using the app</strong>. RAWD never requests or uses background location, and the Android background-location permission is explicitly blocked in the app's manifest.</li>
+  <li>The app takes a <strong>single reading</strong> when needed. It does not follow you.</li>
+  <li>Accuracy is deliberately set to "balanced" rather than the highest available, because prayer times change by less than a minute over tens of kilometres. RAWD does not ask for more precision than the feature needs.</li>
+  <li>Your coordinates are <strong>used on your device</strong> to compute prayer times and the Qibla bearing. They are not sent to us — we operate no server that receives them.</li>
+  <li><strong>One exception:</strong> to display a city name, the app asks your phone's operating system to convert your coordinates into a place name. On iOS this is handled by Apple. That lookup is optional; if it fails, everything still works and only the city label is missing.</li>
+  <li>If you refuse location permission, you can pick your city from a built-in list instead, and all features continue to work.</li>
+</ul>
+<p><strong>Your location is never sold, never shared with advertisers, and never used to build an advertising profile.</strong></p>
+
+<h2>3. Optional account</h2>
+<p>Creating an account is entirely optional and the app is complete without one.</p>
+<p>If you do create one, we store — using <a href="https://supabase.com" rel="noopener">Supabase</a> as our database provider — your email address and the data you choose to sync: bookmarks, favourites, custom wird routines, and streak counts.</p>
+<ul>
+  <li>Signing in <strong>merges</strong> your device data with your account. Nothing on your device is deleted.</li>
+  <li>We do not store a log of your prayers, your location, or a record of what you read.</li>
+  <li>You can delete your account and everything synced to it at any time: <strong>Profile → Delete account.</strong> This is immediate and permanent.</li>
+</ul>
+<p>If you sign in with Apple, Apple provides us with your email address (or a private relay address if you choose to hide it) and, optionally, your name.</p>
+
+<h2>4. Advertising</h2>
+<p>RAWD is free, and free users see a small number of advertisements provided by Google AdMob.</p>
+<ul>
+  <li>The app requests <strong>non-personalised advertisements</strong>.</li>
+  <li>Advertisements appear at most <strong>twice per day</strong>, never on app launch, and never over religious content — there are no advertisements inside the Quran reader, between Athkar, over the Qibla compass, or on the prayer times screen.</li>
+  <li>Google may use a device advertising identifier to serve and measure advertisements. You can limit this in your device settings, and on iOS you will be asked before any tracking occurs.</li>
+  <li><strong>We do not build advertising audiences based on religious activity.</strong> Nothing about what you read, when you pray, or which supplications you use is shared with any advertising network.</li>
+</ul>
+<p>RAWD Premium removes advertising entirely. Google's privacy policy: <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a></p>
+
+<h2>5. Purchases</h2>
+<p>RAWD Premium is processed by Apple and managed through <a href="https://www.revenuecat.com" rel="noopener">RevenueCat</a>. We never see or store your payment details. RevenueCat receives purchase and receipt information in order to tell the app whether your subscription is active. RevenueCat's privacy policy: <a href="https://www.revenuecat.com/privacy" rel="noopener">revenuecat.com/privacy</a></p>
+
+<h2>6. Quran recitation</h2>
+<p>Recitation audio is streamed on demand from the Quran.com audio service. When you play a recitation, that service receives your IP address and which chapter you requested, as any web request would. Downloading a surah for offline listening stores it on your device only.</p>
+
+<h2>7. Analytics</h2>
+<ul>
+  <li>RAWD can record anonymous counts of which screens are opened, to understand which features are used.</li>
+  <li>This is switched off with a single toggle: <strong>Settings → Privacy → Share anonymous usage data.</strong></li>
+  <li>The app enforces a strict allow-list of what may ever be recorded. Quran text, supplication text, your reading history and your location <strong>cannot</strong> be sent — the code discards them before anything is transmitted.</li>
+  <li>No analytics provider is connected in this release.</li>
+</ul>
+
+<h2>8. Children</h2>
+<p>RAWD is not directed at children under 13 and does not knowingly collect information from them.</p>
+
+<h2>9. Your rights</h2>
+<p>You may at any time erase everything stored on your device, delete your account and all synced data, turn off analytics, turn off all notifications, or use the entire app with no account at all.</p>
+<p>If you are in a jurisdiction granting rights of access, correction, portability or erasure (such as the GDPR), contact us and we will respond within the period required by that law.</p>
+
+<h2>10. Changes</h2>
+<p>If this policy changes materially we will update the date at the top and note the change in the app's release notes.</p>
+
+<h2>11. Contact</h2>
+<div class="card">
+  <p class="mail"><a href="mailto:rawd.support1@gmail.com">rawd.support1@gmail.com</a></p>
+  <p style="margin:.4rem 0 0;color:var(--muted)">RAWD · Kuwait</p>
+</div>
+</div>
+    <div data-lang="ar">
+<h1>سياسة الخصوصية</h1>
+<p class="updated">آخر تحديث: 17 أغسطس 2026</p>
+
+<p>رَوْض تطبيق إسلامي يوفّر مواقيت الصلاة واتجاه القبلة والقرآن الكريم والأذكار والأدعية. توضّح هذه السياسة بالتحديد ما يفعله التطبيق بمعلوماتك.</p>
+
+<div class="note"><p>باختصار: <strong>صُمّم رَوْض ليعمل دون أن يعرف من أنت.</strong> لا يُشترط إنشاء حساب، والتطبيق يعمل بالكامل بدون إنترنت.</p></div>
+
+<h2>١. معلومات محفوظة على جهازك</h2>
+<p>كل ما يلي يبقى على هاتفك، ولا يُرسل إلى أي جهة ما لم تختر إنشاء حساب (انظر البند ٣).</p>
+<ul>
+  <li>إحداثيات موقعك، أو المدينة التي اخترتها يدوياً</li>
+  <li>إعدادات حساب المواقيت وتعديلاتك عليها</li>
+  <li>موضع القراءة والعلامات والملاحظات في المصحف</li>
+  <li>عدّادات الأذكار وتقدّمك اليومي</li>
+  <li>عدد التسبيح وسجلّه</li>
+  <li>المفضّلة والمجموعات</li>
+  <li>أورادك الخاصة</li>
+  <li>سلسلة أيام المداومة ونشاطك اليومي</li>
+  <li>تفضيلات التطبيق كاللغة والمظهر وحجم الخط وإعدادات التنبيهات</li>
+</ul>
+<p>يمكنك محو ذلك كله في أي وقت من: <strong>الإعدادات ← الخصوصية ← مسح بيانات هذا الجهاز.</strong></p>
+
+<h2>٢. الموقع</h2>
+<p>لا يطلب رَوْض إذن الموقع إلا بعد أن يوضّح سبب الحاجة إليه، ولا يستخدمه إلا لحساب مواقيت الصلاة في مكانك ولحساب اتجاه القبلة.</p>
+<ul>
+  <li>يُطلب الموقع <strong>أثناء استخدامك للتطبيق فقط</strong>. لا يطلب رَوْض الموقع في الخلفية ولا يستخدمه، وإذن الموقع الخلفي في أندرويد محظور صراحةً في ملف التطبيق.</li>
+  <li>يأخذ التطبيق <strong>قراءة واحدة</strong> عند الحاجة، ولا يتتبّعك.</li>
+  <li>الدقة مضبوطة عمداً على «متوازنة» لا على أعلى دقة ممكنة، لأن المواقيت لا تتغيّر أكثر من دقيقة على مدى عشرات الكيلومترات. فرَوْض لا يطلب دقة أكثر مما تحتاجه الميزة.</li>
+  <li>تُستخدم إحداثياتك <strong>على جهازك</strong> لحساب المواقيت وزاوية القبلة، ولا تُرسل إلينا — فليس لدينا خادم يستقبلها.</li>
+  <li><strong>استثناء واحد:</strong> لعرض اسم المدينة يطلب التطبيق من نظام تشغيل هاتفك تحويل الإحداثيات إلى اسم مكان، وتتولى Apple ذلك في iOS. وهذه العملية اختيارية؛ فإن أخفقت يظل كل شيء يعمل ولا يغيب سوى اسم المدينة.</li>
+  <li>وإن رفضت إذن الموقع، يمكنك اختيار مدينتك من قائمة مضمّنة في التطبيق، وتبقى جميع الميزات تعمل.</li>
+</ul>
+<p><strong>موقعك لا يُباع، ولا يُشارَك مع المعلنين، ولا يُستخدم لبناء ملف إعلاني عنك.</strong></p>
+
+<h2>٣. الحساب الاختياري</h2>
+<p>إنشاء الحساب اختياري تماماً، والتطبيق كامل بدونه.</p>
+<p>وإن أنشأت حساباً فإننا نحفظ — عبر مزوّد قواعد البيانات <a href="https://supabase.com" rel="noopener">Supabase</a> — بريدك الإلكتروني والبيانات التي تختار مزامنتها: العلامات والمفضّلة والأوراد وعدد أيام المداومة.</p>
+<ul>
+  <li>تسجيل الدخول <strong>يدمج</strong> بيانات جهازك مع حسابك، ولا يُحذف شيء من جهازك.</li>
+  <li>لا نحفظ سجلاً لصلواتك ولا لموقعك ولا لما تقرؤه.</li>
+  <li>يمكنك حذف حسابك وكل ما تمت مزامنته في أي وقت من: <strong>حسابي ← حذف الحساب</strong>، ويتم ذلك فوراً وبشكل نهائي.</li>
+</ul>
+<p>وإذا سجّلت الدخول عبر Apple فإن Apple تزوّدنا ببريدك الإلكتروني (أو بعنوان ترحيل خاص إن اخترت إخفاءه)، وباسمك اختيارياً.</p>
+
+<h2>٤. الإعلانات</h2>
+<p>رَوْض مجاني، ويرى المستخدمون المجانيون عدداً قليلاً من الإعلانات عبر Google AdMob.</p>
+<ul>
+  <li>يطلب التطبيق <strong>إعلانات غير مخصّصة</strong>.</li>
+  <li>تظهر الإعلانات <strong>مرتين في اليوم كحدّ أقصى</strong>، ولا تظهر عند فتح التطبيق أبداً، ولا تظهر فوق المحتوى الديني إطلاقاً — فلا إعلان داخل المصحف، ولا بين الأذكار، ولا فوق بوصلة القبلة، ولا في شاشة المواقيت.</li>
+  <li>قد تستخدم Google معرّف الإعلانات في جهازك لعرض الإعلانات وقياسها، ويمكنك الحدّ من ذلك من إعدادات جهازك، وسيُطلب إذنك في iOS قبل أي تتبّع.</li>
+  <li><strong>لا نبني شرائح إعلانية بناءً على نشاطك الديني.</strong> فلا شيء ممّا تقرؤه أو تدعو به أو أوقات صلاتك يُشارَك مع أي شبكة إعلانية.</li>
+</ul>
+<p>ويزيل اشتراك رَوْض بريميوم الإعلانات كلياً. سياسة خصوصية Google: <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a></p>
+
+<h2>٥. المشتريات</h2>
+<p>تُعالَج مشتريات رَوْض بريميوم عبر Apple وتُدار من خلال <a href="https://www.revenuecat.com" rel="noopener">RevenueCat</a>. ولا نرى بيانات الدفع الخاصة بك ولا نحفظها. وتستقبل RevenueCat بيانات الشراء والإيصال لتخبر التطبيق بما إذا كان اشتراكك فعّالاً. سياسة خصوصية RevenueCat: <a href="https://www.revenuecat.com/privacy" rel="noopener">revenuecat.com/privacy</a></p>
+
+<h2>٦. تلاوة القرآن</h2>
+<p>تُبثّ التلاوة عند الطلب من خدمة الصوت في Quran.com. وعند تشغيل التلاوة تستقبل تلك الخدمة عنوان IP الخاص بك والسورة المطلوبة، شأنها شأن أي طلب على الإنترنت. أما تنزيل السورة للاستماع دون إنترنت فيُحفظ على جهازك وحده.</p>
+
+<h2>٧. تحليلات الاستخدام</h2>
+<ul>
+  <li>يستطيع رَوْض تسجيل أعداد مجهولة لمرات فتح الشاشات، لمعرفة الميزات المستخدمة.</li>
+  <li>ويمكن إيقاف ذلك بزرّ واحد: <strong>الإعدادات ← الخصوصية ← مشاركة بيانات استخدام مجهولة.</strong></li>
+  <li>ويفرض التطبيق قائمة سماح صارمة لما يمكن تسجيله أصلاً؛ فنصوص القرآن والأدعية وسجل قراءتك وموقعك <strong>لا يمكن</strong> إرسالها، إذ يتخلّص الكود منها قبل إرسال أي شيء.</li>
+  <li>ولا يوجد مزوّد تحليلات متصل في هذا الإصدار.</li>
+</ul>
+
+<h2>٨. الأطفال</h2>
+<p>رَوْض غير موجّه للأطفال دون سن الثالثة عشرة، ولا يجمع معلومات منهم عن علم.</p>
+
+<h2>٩. حقوقك</h2>
+<p>يمكنك في أي وقت محو كل ما هو محفوظ على جهازك، وحذف حسابك وكل ما تمت مزامنته، وإيقاف التحليلات، وإيقاف جميع التنبيهات، أو استخدام التطبيق كاملاً دون أي حساب.</p>
+<p>وإن كنت في نطاق قضائي يمنحك حقوق الاطلاع والتصحيح والنقل والمحو (مثل اللائحة الأوروبية GDPR)، فتواصل معنا وسنردّ خلال المدة التي يفرضها ذلك القانون.</p>
+
+<h2>١٠. التعديلات</h2>
+<p>إن تغيّرت هذه السياسة تغيّراً جوهرياً فسنحدّث التاريخ أعلاه ونذكر التغيير في ملاحظات إصدار التطبيق.</p>
+
+<h2>١١. التواصل</h2>
+<div class="card">
+  <p class="mail"><a href="mailto:rawd.support1@gmail.com">rawd.support1@gmail.com</a></p>
+  <p style="margin:.4rem 0 0;color:var(--muted)">RAWD · الكويت</p>
+</div>
+</div>
+  </main>
+
+  <footer>
+    <a href="../privacy/">Privacy · الخصوصية</a>
+    <a href="../terms/">Terms · الشروط</a>
+    <a href="../support/">Support · الدعم</a>
+    <a href="mailto:rawd.support1@gmail.com">rawd.support1@gmail.com</a>
+  </footer>
+</div>
+<script>(function () {
+  var KEY = 'rawd-legal-lang';
+  function pick() {
+    var q = new URLSearchParams(location.search).get('lang');
+    if (q === 'ar' || q === 'en') return q;
+    try { var s = localStorage.getItem(KEY); if (s) return s; } catch (e) {}
+    return (navigator.language || 'en').toLowerCase().indexOf('ar') === 0 ? 'ar' : 'en';
+  }
+  function apply(lang) {
+    var rtl = lang === 'ar';
+    document.documentElement.lang = lang;
+    document.documentElement.dir = rtl ? 'rtl' : 'ltr';
+    document.body.dir = rtl ? 'rtl' : 'ltr';
+    var blocks = document.querySelectorAll('[data-lang]');
+    for (var i = 0; i < blocks.length; i++) {
+      blocks[i].classList.toggle('on', blocks[i].getAttribute('data-lang') === lang);
+    }
+    var btns = document.querySelectorAll('.langs button');
+    for (var j = 0; j < btns.length; j++) {
+      btns[j].setAttribute('aria-pressed', String(btns[j].dataset.set === lang));
+    }
+    var t = document.querySelector('[data-title-' + lang + ']');
+    if (t) document.title = t.getAttribute('data-title-' + lang);
+    try { localStorage.setItem(KEY, lang); } catch (e) {}
+  }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('.langs button');
+    if (b) apply(b.dataset.set);
+  });
+  apply(pick());
+})();</script>
+</body>
+</html>

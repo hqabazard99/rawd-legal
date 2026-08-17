@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Use · RAWD</title>
+<meta name="description" content="Terms of Use for RAWD, an Islamic companion app for Quran, prayer times, Qibla and Athkar.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../favicon.png">
+<style>:root {
+  --bg: #F6F2E9;
+  --surface: #FFFFFF;
+  --text: #171C19;
+  --muted: #5B6862;
+  --primary: #0C6B51;
+  --accent: #B08A3E;
+  --border: #E4DDCD;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #080C0A;
+    --surface: #121915;
+    --text: #F1EEE4;
+    --muted: #9DA8A1;
+    --primary: #35B189;
+    --accent: #D4B26B;
+    --border: #232E28;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+body[dir="rtl"] {
+  font-family: "SF Arabic", "Segoe UI", "Noto Naskh Arabic", "Geeza Pro", Tahoma, sans-serif;
+  line-height: 1.9;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem; }
+header.top {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1rem; flex-wrap: wrap; margin-bottom: 2.5rem;
+}
+.brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; color: inherit; }
+.mark {
+  width: 34px; height: 34px; border-radius: 9px; flex: none;
+  background: var(--primary); color: #fff;
+  display: grid; place-items: center; font-weight: 700; font-size: 15px;
+}
+.brand b { font-size: 1.05rem; letter-spacing: -.01em; }
+.langs { display: flex; gap: .25rem; padding: .25rem; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
+.langs button {
+  font: inherit; font-size: .85rem; padding: .4rem .85rem; border: 0; border-radius: 7px;
+  background: transparent; color: var(--muted); cursor: pointer;
+}
+.langs button[aria-pressed="true"] { background: var(--primary); color: #fff; }
+.langs button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+h1 { font-size: 1.9rem; line-height: 1.25; letter-spacing: -.02em; margin: 0 0 .4rem; }
+h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; letter-spacing: -.01em; }
+h3 { font-size: 1rem; margin: 1.6rem 0 .4rem; }
+.updated { color: var(--muted); font-size: .9rem; margin: 0 0 2rem; }
+p, li { color: var(--text); }
+ul { padding-inline-start: 1.25rem; }
+li { margin: .4rem 0; }
+a { color: var(--primary); text-underline-offset: 3px; }
+strong { font-weight: 600; }
+.note {
+  background: var(--surface); border: 1px solid var(--border);
+  border-inline-start: 3px solid var(--accent);
+  border-radius: 10px; padding: 1rem 1.15rem; margin: 1.5rem 0;
+}
+.note p:first-child { margin-top: 0; }
+.note p:last-child { margin-bottom: 0; }
+.card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 14px; padding: 1.25rem; margin: 1rem 0;
+}
+.cards { display: grid; gap: .85rem; margin-top: 2rem; }
+a.card { display: block; text-decoration: none; color: inherit; }
+a.card:hover { border-color: var(--primary); }
+a.card b { display: block; color: var(--primary); margin-bottom: .2rem; }
+a.card span { color: var(--muted); font-size: .92rem; }
+.mail { font-size: 1.05rem; font-weight: 600; word-break: break-all; }
+footer {
+  margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+  color: var(--muted); font-size: .88rem;
+  display: flex; gap: 1.25rem; flex-wrap: wrap;
+}
+footer a { color: var(--muted); }
+[data-lang] { display: none; }
+[data-lang].on { display: block; }</style>
+</head>
+<body>
+<!-- Read by the language toggle to retitle the document. Lives in <body>
+     because <span> is not valid inside <head>. -->
+<span hidden data-title-en="Terms of Use · RAWD" data-title-ar="شروط الاستخدام · رَوْض"></span>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="../"><span class="mark">R</span><b>RAWD · رَوْض</b></a>
+    <div class="langs" role="group" aria-label="Language / اللغة">
+      <button type="button" data-set="en" aria-pressed="true">English</button>
+      <button type="button" data-set="ar" aria-pressed="false">العربية</button>
+    </div>
+  </header>
+
+  <main>
+    <div data-lang="en" class="on">
+<h1>Terms of Use</h1>
+<p class="updated">Last updated: 17 August 2026</p>
+
+<p>By using RAWD ("the app") you agree to these terms. The app is provided by RAWD.</p>
+
+<h2>1. Religious content</h2>
+<p>We take the integrity of the religious content seriously.</p>
+<ul>
+  <li>The Quran text is the Uthmani (Hafs) text sourced from the Tanzil Project and verified against a second independent source before shipping.</li>
+  <li>Athkar and supplications are taken from <em>Hisn al-Muslim</em> by Sa'id b. Ali b. Wahf al-Qahtani, with their sources shown in the app.</li>
+  <li>Translations are provided for understanding only and are not a substitute for the Arabic.</li>
+  <li>Where a verified translation is unavailable, the app shows the Arabic alone and says so, rather than supplying an unverified one.</li>
+</ul>
+<p>Full provenance for every dataset is listed in the app under <strong>Settings → Content sources</strong>. If you believe any content is inaccurate, please tell us and we will correct it.</p>
+
+<h2>2. Prayer times and Qibla are calculated, not authoritative</h2>
+<p>Prayer times and the Qibla direction are <strong>calculated estimates</strong>, produced from your location using established astronomical methods and the calculation method you select.</p>
+<p>They may differ from your local mosque or authority for legitimate reasons: different calculation conventions, different opinions on the Asr time, local adjustments, or the accuracy of your device's location and compass. The app lets you choose your calculation method and adjust each prayer individually so you can match your local authority.</p>
+<div class="note"><p><strong>Where certainty matters, follow your local mosque or religious authority.</strong> The compass in particular depends on your device's magnetometer, which can be affected by nearby metal, magnets, cases and electronics.</p></div>
+<p>We provide these calculations in good faith but cannot guarantee they are correct for every location and circumstance.</p>
+
+<h2>3. RAWD Premium</h2>
+<p>RAWD is free to use. RAWD Premium is an optional subscription that removes advertising and adds optional conveniences.</p>
+<ul>
+  <li><strong>The Quran, prayer times, the Qibla, Athkar and supplications are free for everyone, always.</strong> Premium never restricts religious content.</li>
+  <li>Prices are shown in your local currency on the purchase screen before you buy.</li>
+  <li>Payment is charged to your Apple ID on confirmation of purchase.</li>
+  <li>Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period.</li>
+  <li>Manage or cancel your subscription in your Apple ID account settings. Deleting the app does not cancel a subscription.</li>
+  <li>Refunds are handled by Apple under their policies, not by us.</li>
+</ul>
+
+<h2>4. Your account</h2>
+<p>An account is optional. If you create one, you are responsible for keeping your credentials secure. You may delete your account at any time from within the app, which permanently removes it and all data synced to it.</p>
+
+<h2>5. Acceptable use</h2>
+<p>Please do not attempt to disrupt the service, access other users' data, or redistribute the app's bundled content outside the terms of the licences listed under <strong>Settings → Content sources</strong>.</p>
+
+<h2>6. Availability</h2>
+<p>We aim to keep the app working but do not guarantee uninterrupted availability. The core of the app — the Quran, Athkar, supplications, prayer times and the Qibla — is designed to work with no internet connection at all.</p>
+
+<h2>7. Liability</h2>
+<p>To the extent permitted by law, the app is provided "as is". We are not liable for indirect or consequential loss arising from its use. Nothing in these terms limits liability that cannot be limited by law.</p>
+
+<h2>8. Changes</h2>
+<p>We may update these terms. Material changes will be noted in the app's release notes and the date above will be updated.</p>
+
+<h2>9. Governing law</h2>
+<p>These terms are governed by the laws of Kuwait.</p>
+
+<h2>10. Contact</h2>
+<div class="card"><p class="mail"><a href="mailto:rawd.support1@gmail.com">rawd.support1@gmail.com</a></p></div>
+</div>
+    <div data-lang="ar">
+<h1>شروط الاستخدام</h1>
+<p class="updated">آخر تحديث: 17 أغسطس 2026</p>
+
+<p>باستخدامك تطبيق رَوْض («التطبيق») فإنك توافق على هذه الشروط. والتطبيق مقدَّم من RAWD.</p>
+
+<h2>١. المحتوى الديني</h2>
+<p>نأخذ سلامة المحتوى الديني على محمل الجدّ.</p>
+<ul>
+  <li>نص القرآن الكريم بالرسم العثماني برواية حفص، مصدره مشروع تنزيل، وقد قوبل مع مصدر ثانٍ مستقل قبل إدراجه في التطبيق.</li>
+  <li>الأذكار والأدعية مأخوذة من كتاب <em>حصن المسلم</em> للشيخ سعيد بن علي بن وهف القحطاني، ومصادرها معروضة داخل التطبيق.</li>
+  <li>الترجمات للاستفهام والفهم فقط، وليست بديلاً عن النص العربي.</li>
+  <li>وحيثما لا تتوفر ترجمة موثّقة، يعرض التطبيق النص العربي وحده ويصرّح بذلك، بدلاً من تقديم ترجمة غير موثّقة.</li>
+</ul>
+<p>وتفاصيل مصادر كل مجموعة بيانات مذكورة في التطبيق ضمن <strong>الإعدادات ← مصادر المحتوى</strong>. وإن رأيت خطأً في أي محتوى فأخبرنا وسنصحّحه.</p>
+
+<h2>٢. المواقيت والقبلة محسوبة لا مُلزِمة</h2>
+<p>مواقيت الصلاة واتجاه القبلة <strong>تقديرات محسوبة</strong>، تُستخرج من موقعك بطرق فلكية معتمدة ووفق طريقة الحساب التي تختارها.</p>
+<p>وقد تختلف عمّا لدى مسجدك أو الجهة الرسمية في بلدك لأسباب معتبرة: اختلاف اصطلاحات الحساب، أو الاختلاف في وقت العصر، أو التعديلات المحلية، أو دقة تحديد الموقع والبوصلة في جهازك. ويتيح لك التطبيق اختيار طريقة الحساب وتعديل كل صلاة على حدة لتوافق الجهة التي تتبعها.</p>
+<div class="note"><p><strong>وحيث يلزم اليقين، فاعتمد على مسجدك أو الجهة الشرعية في بلدك.</strong> والبوصلة على وجه الخصوص تعتمد على حسّاس المغناطيسية في جهازك، وقد تتأثر بالمعادن والمغانط والأغطية والأجهزة الإلكترونية القريبة.</p></div>
+<p>ونقدّم هذه الحسابات بحسن نية، لكنّنا لا نضمن صحتها في كل موضع وكل ظرف.</p>
+
+<h2>٣. رَوْض بريميوم</h2>
+<p>رَوْض مجاني الاستخدام. ورَوْض بريميوم اشتراك اختياري يزيل الإعلانات ويضيف تسهيلات اختيارية.</p>
+<ul>
+  <li><strong>القرآن ومواقيت الصلاة والقبلة والأذكار والأدعية مجانية للجميع دائماً.</strong> ولا يقيّد الاشتراك المحتوى الديني أبداً.</li>
+  <li>تُعرض الأسعار بعملتك المحلية في شاشة الشراء قبل إتمامه.</li>
+  <li>تُخصم القيمة من حساب Apple عند تأكيد الشراء.</li>
+  <li>يتجدد الاشتراك تلقائياً ما لم يُلغَ قبل نهاية المدة الحالية بأربع وعشرين ساعة على الأقل.</li>
+  <li>يمكنك إدارة الاشتراك أو إلغاؤه من إعدادات حساب Apple لديك. وحذف التطبيق لا يلغي الاشتراك.</li>
+  <li>وتتولى Apple معالجة طلبات الاسترداد وفق سياساتها، لا نحن.</li>
+</ul>
+
+<h2>٤. حسابك</h2>
+<p>الحساب اختياري. وإن أنشأته فأنت مسؤول عن حفظ بيانات دخولك. ويمكنك حذف حسابك في أي وقت من داخل التطبيق، فيُحذف نهائياً هو وكل ما تمت مزامنته معه.</p>
+
+<h2>٥. الاستخدام المقبول</h2>
+<p>نرجو عدم محاولة تعطيل الخدمة، أو الوصول إلى بيانات مستخدمين آخرين، أو إعادة نشر محتوى التطبيق خارج حدود التراخيص المذكورة في <strong>الإعدادات ← مصادر المحتوى</strong>.</p>
+
+<h2>٦. الإتاحة</h2>
+<p>نسعى لإبقاء التطبيق يعمل، لكننا لا نضمن إتاحة متواصلة دون انقطاع. وجوهر التطبيق — القرآن والأذكار والأدعية والمواقيت والقبلة — مصمَّم ليعمل دون أي اتصال بالإنترنت.</p>
+
+<h2>٧. المسؤولية</h2>
+<p>في حدود ما يسمح به القانون، يُقدَّم التطبيق «كما هو». ولا نتحمل المسؤولية عن الأضرار غير المباشرة أو التبعية الناشئة عن استخدامه. ولا يحدّ أي بند في هذه الشروط من مسؤولية لا يجوز الحدّ منها قانوناً.</p>
+
+<h2>٨. التعديلات</h2>
+<p>قد نحدّث هذه الشروط، وستُذكر التغييرات الجوهرية في ملاحظات إصدار التطبيق ويُحدَّث التاريخ أعلاه.</p>
+
+<h2>٩. القانون الواجب التطبيق</h2>
+<p>تخضع هذه الشروط لقوانين دولة الكويت.</p>
+
+<h2>١٠. التواصل</h2>
+<div class="card"><p class="mail"><a href="mailto:rawd.support1@gmail.com">rawd.support1@gmail.com</a></p></div>
+</div>
+  </main>
+
+  <footer>
+    <a href="../privacy/">Privacy · الخصوصية</a>
+    <a href="../terms/">Terms · الشروط</a>
+    <a href="../support/">Support · الدعم</a>
+    <a href="mailto:rawd.support1@gmail.com">rawd.support1@gmail.com</a>
+  </footer>
+</div>
+<script>(function () {
+  var KEY = 'rawd-legal-lang';
+  function pick() {
+    var q = new URLSearchParams(location.search).get('lang');
+    if (q === 'ar' || q === 'en') return q;
+    try { var s = localStorage.getItem(KEY); if (s) return s; } catch (e) {}
+    return (navigator.language || 'en').toLowerCase().indexOf('ar') === 0 ? 'ar' : 'en';
+  }
+  function apply(lang) {
+    var rtl = lang === 'ar';
+    document.documentElement.lang = lang;
+    document.documentElement.dir = rtl ? 'rtl' : 'ltr';
+    document.body.dir = rtl ? 'rtl' : 'ltr';
+    var blocks = document.querySelectorAll('[data-lang]');
+    for (var i = 0; i < blocks.length; i++) {
+      blocks[i].classList.toggle('on', blocks[i].getAttribute('data-lang') === lang);
+    }
+    var btns = document.querySelectorAll('.langs button');
+    for (var j = 0; j < btns.length; j++) {
+      btns[j].setAttribute('aria-pressed', String(btns[j].dataset.set === lang));
+    }
+    var t = document.querySelector('[data-title-' + lang + ']');
+    if (t) document.title = t.getAttribute('data-title-' + lang);
+    try { localStorage.setItem(KEY, lang); } catch (e) {}
+  }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('.langs button');
+    if (b) apply(b.dataset.set);
+  });
+  apply(pick());
+})();</script>
+</body>
+</html>
