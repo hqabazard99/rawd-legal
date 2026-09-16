@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
@@ -109,11 +109,11 @@ footer a { color: var(--muted); }
   <main>
     <div data-lang="en" class="on">
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: 17 August 2026</p>
+<p class="updated">Last updated: 17 September 2026</p>
 
 <p>RAWD is an Islamic companion app providing prayer times, the Qibla direction, the Quran, Athkar and supplications. This policy explains exactly what the app does with your information.</p>
 
-<div class="note"><p>The short version: <strong>RAWD is built to work without knowing who you are.</strong> No account is required, and the app is fully functional offline.</p></div>
+<div class="note"><p>The short version: <strong>RAWD is built to work without knowing who you are.</strong> Core reading and calculation features work without an account or internet. Streaming, purchases, advertising and optional account services use the internet.</p></div>
 
 <h2>1. Information stored on your device</h2>
 <p>All of the following stays on your phone. It is not transmitted anywhere unless you choose to create an account (see section 3).</p>
@@ -140,41 +140,38 @@ footer a { color: var(--muted); }
   <li><strong>One exception:</strong> to display a city name, the app asks your phone's operating system to convert your coordinates into a place name. On iOS this is handled by Apple. That lookup is optional; if it fails, everything still works and only the city label is missing.</li>
   <li>If you refuse location permission, you can pick your city from a built-in list instead, and all features continue to work.</li>
 </ul>
-<p><strong>Your location is never sold, never shared with advertisers, and never used to build an advertising profile.</strong></p>
+<p><strong>RAWD does not send your GPS coordinates or selected city to advertisers. AdMob may infer an approximate location from your IP address when you use advertising services (see section 4).</strong></p>
 
 <h2>3. Optional account</h2>
 <p>Creating an account is entirely optional and the app is complete without one.</p>
-<p>If you do create one, we store — using <a href="https://supabase.com" rel="noopener">Supabase</a> as our database provider — your email address and the data you choose to sync: bookmarks, favourites, custom wird routines, and streak counts.</p>
+<p>If you do create one, we store — using <a href="https://supabase.com" rel="noopener">Supabase</a> as our database provider — your email address and the data you choose to sync: bookmarks and their notes, favourites, custom wird routines, the last reading position, and streak counts.</p>
 <ul>
   <li>Signing in <strong>merges</strong> your device data with your account. Nothing on your device is deleted.</li>
-  <li>We do not store a log of your prayers, your location, or a record of what you read.</li>
+  <li>We do not sync your GPS location or a prayer log. Synced bookmarks, favourites and the last reading position can reveal the religious content you save or read; they are stored with your account to provide its features, not supplied to advertising networks.</li>
   <li>You can delete your account and everything synced to it at any time: <strong>Profile → Delete account.</strong> This is immediate and permanent.</li>
 </ul>
 <p>If you sign in with Apple, Apple provides us with your email address (or a private relay address if you choose to hide it) and, optionally, your name.</p>
 
-<h2>4. Advertising</h2>
-<p>RAWD is free, and free users see a small number of advertisements provided by Google AdMob.</p>
+<h2>4. Advertising and privacy choices</h2>
+<p>Free users may see advertisements supplied by Google AdMob. RAWD requests non-personalised ads; this does not mean the advertising service collects no data.</p>
 <ul>
-  <li>The app requests <strong>non-personalised advertisements</strong>.</li>
-  <li>Advertisements appear at most <strong>twice per day</strong>, never on app launch, and never over religious content — there are no advertisements inside the Quran reader, between Athkar, over the Qibla compass, or on the prayer times screen.</li>
-  <li><strong>RAWD does not ask permission to track you, because it does not track you.</strong> It requests non-personalised advertisements only and does not use the iOS advertising identifier to follow you across other companies' apps or websites.</li>
-  <li><strong>We do not build advertising audiences based on religious activity.</strong> Nothing about what you read, when you pray, or which supplications you use is shared with any advertising network.</li>
+  <li>AdMob may collect IP addresses (which can indicate approximate location), app- or device-related identifiers, ad impressions and interactions, crash information, and performance diagnostics for advertising, reporting, fraud prevention and service operation.</li>
+  <li>RAWD does not supply GPS coordinates, Quran text, supplications, saved religious content or prayer activity to the advertising SDK.</li>
+  <li>Interstitials (full-screen ads) are capped at two per local day, with a launch grace period and minimum interval. Banners may appear on the More screen and are not part of that two-interstitial limit. Ads are not placed inside the Quran reader, between Athkar, over Qibla, or on prayer-time screens.</li>
+  <li>The updated app checks Google's User Messaging Platform before requesting ads and displays the applicable consent message. If that check fails, ads remain off. Where Google requires an ongoing privacy-options entry, use <strong>Settings → Privacy → Ad privacy choices</strong> to review or change your choices. Older builds may need updating to offer this control.</li>
+  <li>The app does not request Apple's tracking permission or intentionally use IDFA for cross-app tracking. Advertising consent and Apple's tracking permission are separate. AdMob's ad-serving mode depends on the applicable privacy choices; RAWD continues to request non-personalised ads.</li>
 </ul>
-<p>RAWD Premium removes advertising entirely. Google's privacy policy: <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a></p>
+<p>Premium removes advertising. The app's usage-analytics toggle does not control AdMob. <a href="https://policies.google.com/privacy" rel="noopener">Google privacy policy</a>.</p>
 
 <h2>5. Purchases</h2>
-<p>RAWD Premium is processed by Apple and managed through <a href="https://www.revenuecat.com" rel="noopener">RevenueCat</a>. We never see or store your payment details. RevenueCat receives purchase and receipt information in order to tell the app whether your subscription is active. RevenueCat's privacy policy: <a href="https://www.revenuecat.com/privacy" rel="noopener">revenuecat.com/privacy</a></p>
+<p>Apple processes iOS purchases; RevenueCat validates receipts and manages subscription entitlements. RevenueCat receives purchase history, product and transaction information, subscription status and an app user identifier for subscription functionality and purchase analytics. RAWD does not receive your payment-card details.</p>
+<p>Without an account, RevenueCat uses an anonymous app user ID. When account services are enabled and you sign in, RAWD can associate purchases with your account ID. Purchase records may remain with Apple or RevenueCat for transaction, fraud-prevention or retention requirements after a RAWD account is deleted. Contact support for requests concerning purchase data. The usage-analytics toggle does not disable purchase processing or RevenueCat's purchase analytics. <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat privacy policy</a>.</p>
 
 <h2>6. Quran recitation</h2>
 <p>Recitation audio is streamed on demand from the Quran.com audio service. When you play a recitation, that service receives your IP address and which chapter you requested, as any web request would. Downloading a surah for offline listening stores it on your device only.</p>
 
-<h2>7. Analytics</h2>
-<ul>
-  <li>RAWD can record anonymous counts of which screens are opened, to understand which features are used.</li>
-  <li>This is switched off with a single toggle: <strong>Settings → Privacy → Share anonymous usage data.</strong></li>
-  <li>The app enforces a strict allow-list of what may ever be recorded. Quran text, supplication text, your reading history and your location <strong>cannot</strong> be sent — the code discards them before anything is transmitted.</li>
-  <li>No analytics provider is connected in this release.</li>
-</ul>
+<h2>7. App usage analytics</h2>
+<p>No external app-usage analytics provider is connected in this release. The <strong>Share anonymous usage data</strong> switch controls RAWD's own usage-event layer; it does not control AdMob, RevenueCat or the network requests needed for recitation and account services. These services are described above. RAWD does not send religious activity to an advertising analytics provider.</p>
 
 <h2>8. Children</h2>
 <p>RAWD is not directed at children under 13 and does not knowingly collect information from them.</p>
@@ -194,11 +191,11 @@ footer a { color: var(--muted); }
 </div>
     <div data-lang="ar">
 <h1>سياسة الخصوصية</h1>
-<p class="updated">آخر تحديث: 17 أغسطس 2026</p>
+<p class="updated">آخر تحديث: 17 سبتمبر 2026</p>
 
 <p>رَوْض تطبيق إسلامي يوفّر مواقيت الصلاة واتجاه القبلة والقرآن الكريم والأذكار والأدعية. توضّح هذه السياسة بالتحديد ما يفعله التطبيق بمعلوماتك.</p>
 
-<div class="note"><p>باختصار: <strong>صُمّم رَوْض ليعمل دون أن يعرف من أنت.</strong> لا يُشترط إنشاء حساب، والتطبيق يعمل بالكامل بدون إنترنت.</p></div>
+<div class="note"><p>باختصار: <strong>صُمّم رَوْض ليعمل دون أن يعرف من أنت.</strong> تعمل ميزات القراءة والحساب الأساسية دون حساب أو إنترنت. أما البث والمشتريات والإعلانات وخدمات الحساب الاختيارية فتستخدم الإنترنت.</p></div>
 
 <h2>١. معلومات محفوظة على جهازك</h2>
 <p>كل ما يلي يبقى على هاتفك، ولا يُرسل إلى أي جهة ما لم تختر إنشاء حساب (انظر البند ٣).</p>
@@ -225,41 +222,38 @@ footer a { color: var(--muted); }
   <li><strong>استثناء واحد:</strong> لعرض اسم المدينة يطلب التطبيق من نظام تشغيل هاتفك تحويل الإحداثيات إلى اسم مكان، وتتولى Apple ذلك في iOS. وهذه العملية اختيارية؛ فإن أخفقت يظل كل شيء يعمل ولا يغيب سوى اسم المدينة.</li>
   <li>وإن رفضت إذن الموقع، يمكنك اختيار مدينتك من قائمة مضمّنة في التطبيق، وتبقى جميع الميزات تعمل.</li>
 </ul>
-<p><strong>موقعك لا يُباع، ولا يُشارَك مع المعلنين، ولا يُستخدم لبناء ملف إعلاني عنك.</strong></p>
+<p><strong>لا يرسل رَوْض إحداثيات GPS أو المدينة التي اخترتها إلى المعلنين. وقد تستنتج AdMob موقعاً تقريبياً من عنوان IP عند استخدام خدمات الإعلانات (انظر البند ٤).</strong></p>
 
 <h2>٣. الحساب الاختياري</h2>
 <p>إنشاء الحساب اختياري تماماً، والتطبيق كامل بدونه.</p>
-<p>وإن أنشأت حساباً فإننا نحفظ — عبر مزوّد قواعد البيانات <a href="https://supabase.com" rel="noopener">Supabase</a> — بريدك الإلكتروني والبيانات التي تختار مزامنتها: العلامات والمفضّلة والأوراد وعدد أيام المداومة.</p>
+<p>وإن أنشأت حساباً فإننا نحفظ — عبر مزوّد قواعد البيانات <a href="https://supabase.com" rel="noopener">Supabase</a> — بريدك الإلكتروني والبيانات التي تختار مزامنتها: العلامات وملاحظاتها والمفضّلة والأوراد وآخر موضع للقراءة وعدد أيام المداومة.</p>
 <ul>
   <li>تسجيل الدخول <strong>يدمج</strong> بيانات جهازك مع حسابك، ولا يُحذف شيء من جهازك.</li>
-  <li>لا نحفظ سجلاً لصلواتك ولا لموقعك ولا لما تقرؤه.</li>
+  <li>لا نزامن موقع GPS أو سجلاً للصلوات. وقد تكشف العلامات والمفضّلة وآخر موضع للقراءة عن المحتوى الديني الذي تحفظه أو تقرؤه؛ وتُحفظ مع حسابك لتقديم ميزاته ولا تُرسل إلى شبكات الإعلانات.</li>
   <li>يمكنك حذف حسابك وكل ما تمت مزامنته في أي وقت من: <strong>حسابي ← حذف الحساب</strong>، ويتم ذلك فوراً وبشكل نهائي.</li>
 </ul>
 <p>وإذا سجّلت الدخول عبر Apple فإن Apple تزوّدنا ببريدك الإلكتروني (أو بعنوان ترحيل خاص إن اخترت إخفاءه)، وباسمك اختيارياً.</p>
 
-<h2>٤. الإعلانات</h2>
-<p>رَوْض مجاني، ويرى المستخدمون المجانيون عدداً قليلاً من الإعلانات عبر Google AdMob.</p>
+<h2>٤. الإعلانات وخيارات الخصوصية</h2>
+<p>قد يرى المستخدمون المجانيون إعلانات تقدّمها Google AdMob. يطلب رَوْض إعلانات غير مخصّصة، لكن ذلك لا يعني أن خدمة الإعلانات لا تجمع بيانات.</p>
 <ul>
-  <li>يطلب التطبيق <strong>إعلانات غير مخصّصة</strong>.</li>
-  <li>تظهر الإعلانات <strong>مرتين في اليوم كحدّ أقصى</strong>، ولا تظهر عند فتح التطبيق أبداً، ولا تظهر فوق المحتوى الديني إطلاقاً — فلا إعلان داخل المصحف، ولا بين الأذكار، ولا فوق بوصلة القبلة، ولا في شاشة المواقيت.</li>
-  <li><strong>لا يطلب رَوْض إذن التتبّع لأنه لا يتتبّعك.</strong> فهو يطلب إعلانات غير مخصّصة فقط، ولا يستخدم معرّف الإعلانات في iOS لتتبّعك عبر تطبيقات الشركات الأخرى أو مواقعها.</li>
-  <li><strong>لا نبني شرائح إعلانية بناءً على نشاطك الديني.</strong> فلا شيء ممّا تقرؤه أو تدعو به أو أوقات صلاتك يُشارَك مع أي شبكة إعلانية.</li>
+  <li>قد تجمع AdMob عناوين IP التي قد تدل على موقع تقريبي، ومعرّفات مرتبطة بالتطبيق أو الجهاز، ومرات ظهور الإعلانات والتفاعل معها، وبيانات الأعطال والأداء لأغراض الإعلانات والتقارير ومنع الاحتيال وتشغيل الخدمة.</li>
+  <li>لا يزوّد رَوْض مكتبة الإعلانات بإحداثيات GPS أو نصوص القرآن والأدعية أو المحتوى الديني المحفوظ أو نشاط الصلاة.</li>
+  <li>الإعلانات البينية التي تملأ الشاشة محدودة بمرتين في اليوم المحلي، مع مهلة بعد فتح التطبيق وفاصل زمني بين الإعلانات. وقد تظهر إعلانات بانر في شاشة «المزيد»، ولا تدخل ضمن حد الإعلانين البينيين. لا توضع إعلانات داخل المصحف أو بين الأذكار أو فوق القبلة أو في شاشات المواقيت.</li>
+  <li>يتحقق الإصدار المحدّث من منصة Google لإدارة موافقات المستخدم قبل طلب الإعلانات، ويعرض رسالة الموافقة المطلوبة. وإن أخفق التحقق تبقى الإعلانات متوقفة. وعندما تشترط Google إتاحة خيارات الخصوصية باستمرار، يمكنك مراجعتها أو تغييرها من <strong>الإعدادات ← الخصوصية ← خيارات خصوصية الإعلانات</strong>. وقد يلزم تحديث الإصدارات الأقدم للحصول على هذا الخيار.</li>
+  <li>لا يطلب التطبيق إذن التتبّع من Apple ولا يستخدم IDFA عمداً للتتبّع عبر التطبيقات. الموافقة على الإعلانات وإذن التتبّع من Apple أمران منفصلان. ويتوقف نمط عرض إعلانات AdMob على خيارات الخصوصية السارية، مع استمرار رَوْض في طلب إعلانات غير مخصّصة.</li>
 </ul>
-<p>ويزيل اشتراك رَوْض بريميوم الإعلانات كلياً. سياسة خصوصية Google: <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a></p>
+<p>يزيل بريميوم الإعلانات. ولا يتحكم زر تحليلات استخدام التطبيق في AdMob. <a href="https://policies.google.com/privacy" rel="noopener">سياسة خصوصية Google</a>.</p>
 
 <h2>٥. المشتريات</h2>
-<p>تُعالَج مشتريات رَوْض بريميوم عبر Apple وتُدار من خلال <a href="https://www.revenuecat.com" rel="noopener">RevenueCat</a>. ولا نرى بيانات الدفع الخاصة بك ولا نحفظها. وتستقبل RevenueCat بيانات الشراء والإيصال لتخبر التطبيق بما إذا كان اشتراكك فعّالاً. سياسة خصوصية RevenueCat: <a href="https://www.revenuecat.com/privacy" rel="noopener">revenuecat.com/privacy</a></p>
+<p>تعالج Apple مشتريات iOS، وتتحقق RevenueCat من الإيصالات وتدير استحقاقات الاشتراك. وتستقبل RevenueCat سجل المشتريات وبيانات المنتجات والمعاملات وحالة الاشتراك ومعرّف مستخدم التطبيق لتشغيل الاشتراكات وتحليل المشتريات. ولا يستقبل رَوْض بيانات بطاقتك المصرفية.</p>
+<p>عند عدم وجود حساب تستخدم RevenueCat معرّف مستخدم مجهولاً. وعندما تكون خدمات الحساب مفعّلة وتسجّل الدخول، يمكن لرَوْض ربط المشتريات بمعرّف حسابك. وقد تبقى سجلات الشراء لدى Apple أو RevenueCat بعد حذف حساب رَوْض لمتطلبات المعاملات أو منع الاحتيال أو الاحتفاظ بالسجلات. تواصل مع الدعم بشأن طلبات بيانات المشتريات. ولا يوقف زر تحليلات الاستخدام معالجة المشتريات أو تحليلات الشراء لدى RevenueCat. <a href="https://www.revenuecat.com/privacy" rel="noopener">سياسة خصوصية RevenueCat</a>.</p>
 
 <h2>٦. تلاوة القرآن</h2>
 <p>تُبثّ التلاوة عند الطلب من خدمة الصوت في Quran.com. وعند تشغيل التلاوة تستقبل تلك الخدمة عنوان IP الخاص بك والسورة المطلوبة، شأنها شأن أي طلب على الإنترنت. أما تنزيل السورة للاستماع دون إنترنت فيُحفظ على جهازك وحده.</p>
 
-<h2>٧. تحليلات الاستخدام</h2>
-<ul>
-  <li>يستطيع رَوْض تسجيل أعداد مجهولة لمرات فتح الشاشات، لمعرفة الميزات المستخدمة.</li>
-  <li>ويمكن إيقاف ذلك بزرّ واحد: <strong>الإعدادات ← الخصوصية ← مشاركة بيانات استخدام مجهولة.</strong></li>
-  <li>ويفرض التطبيق قائمة سماح صارمة لما يمكن تسجيله أصلاً؛ فنصوص القرآن والأدعية وسجل قراءتك وموقعك <strong>لا يمكن</strong> إرسالها، إذ يتخلّص الكود منها قبل إرسال أي شيء.</li>
-  <li>ولا يوجد مزوّد تحليلات متصل في هذا الإصدار.</li>
-</ul>
+<h2>٧. تحليلات استخدام التطبيق</h2>
+<p>لا يوجد مزوّد خارجي لتحليلات استخدام التطبيق متصل في هذا الإصدار. ويتحكم زر <strong>مشاركة بيانات استخدام مجهولة</strong> في طبقة أحداث الاستخدام الخاصة برَوْض؛ ولا يتحكم في AdMob أو RevenueCat أو طلبات الشبكة اللازمة للتلاوة وخدمات الحساب الموضّحة أعلاه. ولا يرسل رَوْض النشاط الديني إلى مزوّد تحليلات إعلانية.</p>
 
 <h2>٨. الأطفال</h2>
 <p>رَوْض غير موجّه للأطفال دون سن الثالثة عشرة، ولا يجمع معلومات منهم عن علم.</p>
